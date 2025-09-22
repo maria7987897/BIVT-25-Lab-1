@@ -32,6 +32,16 @@
             bool answer = false;
 
             // code here
+            int n = 0;
+            if (n % 2 == 0)
+            {
+                Console.WriteLine("чётное");
+            }
+            else
+            { 
+                Console.WriteLine("нечётное");
+            }
+
 
             // end
 
@@ -100,5 +110,6 @@
         }
     }
 }
+
 
 
