@@ -7,7 +7,21 @@
             bool answer = false;
 
             // code here
-            answer = true;
+            //answer = true;
+            double d = 45.00;  // Проверяя число, каждый раз меняем значение переменной d
+            if (d > 0)
+            {
+                Console.WriteLine("положительное число");
+            }
+            else if (d < 0)
+            {
+                Console.WriteLine("отрицательное число");
+            }
+            else
+            {
+                Console.WriteLine("число 0");
+
+            }
 
             // end
 
@@ -86,4 +100,5 @@
         }
     }
 }
+
 
