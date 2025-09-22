@@ -5,7 +5,6 @@
         public bool Task1(double d)
         {
             bool answer = false;
-
             // code here
             //answer = true;
             double d = 45.00;  // Проверяя число, каждый раз меняем значение переменной d
@@ -20,11 +19,8 @@
             else
             {
                 Console.WriteLine("число 0");
-
             }
-
             // end
-
             return answer;
         }
 
@@ -36,7 +32,6 @@
         public bool Task2(int n)
         {
             bool answer = false;
-
             // code here
             int n = 0;
             if (n % 2 == 0)
@@ -47,10 +42,7 @@
             { 
                 Console.WriteLine("нечётное");
             }
-
-
             // end
-
             return answer;
         }
 
@@ -62,11 +54,23 @@
         public int Task3(int a, int b)
         {
             int answer = 0;
-
             // code here
-
+            int a = 5;
+            int b = 5;
+            if (a > b)
+            {
+                Console.WriteLine(a);
+            }
+            else if (a < b)
+            {
+                Console.WriteLine(b);
+            }
+            else if (a == b)
+            {
+                Console.WriteLine(a);
+                Console.WriteLine("a = b");
+            }
             // end
-
             return answer;
         }
 
@@ -79,11 +83,8 @@
         public double Task4(double d, double f)
         {
             double answer = 0;
-
             // code here
-
             // end
-
             return answer;
         }
 
@@ -99,11 +100,8 @@
         public double Task5(double x)
         {
             double answer = 0;
-
             // code here
-
             // end
-
             return answer;
         }
 
@@ -118,11 +116,8 @@
         public bool Task6(double x, double y, double r)
         {
             bool answer = false;
-
             // code here
-
             // end
-
             return answer;
         }
 
@@ -138,11 +133,8 @@
         public bool Task7(int n)
         {
             bool answer = false;
-
             // code here
-
             // end
-
             return answer;
         }
 
@@ -158,15 +150,13 @@
         public bool Task8(double L, int T, int M)
         {
             bool answer = false;
-
             // code here
-
             // end
-
             return answer;
         }
     }
 }
+
 
 
 
