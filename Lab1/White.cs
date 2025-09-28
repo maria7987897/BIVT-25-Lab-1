@@ -45,13 +45,9 @@
             // code here
             //int a = 5;
             //int b = 5;
-            if (a > b)
+            if (a >= b)
             {
                 answer = a;
-            }
-            else if (a < b)
-            {
-                answer = b;
             }
             else 
                 answer = b;
@@ -71,18 +67,12 @@
             // code here
             //double d = -1.1;
             //double f = -0.6;
-            if (Math.Abs(f) > Math.Abs(d))
+            if (Math.Abs(f) >= Math.Abs(d))
             {
-                answer = f; // возвращаем значение меньшего по модулю числа
+                answer = d; 
             }
-            else if (Math.Abs(d) > Math.Abs(f))
-            { 
-                answer = d; // возвращаем значение меньшего по модулю числа
-            }
-            else if (Math.Abs(d) == Math.Abs(f))
-            {
-                answer = d;
-            }
+            else 
+                answer = d; 
             // end
             return answer;
         }
@@ -100,13 +90,12 @@
         {
             double answer = 0;
             // code here
-            double x = 2.4;
+            //double x = 2.4;
 
             if (Math.Abs(x) > 1)
             {
                 answer = 1;
             }
-            
             else 
                 answer = x;
             // end
@@ -154,8 +143,7 @@
             //int n = 15;
             //int s = n * n;
             int s = n * n;
-            if ((s - n) > (2 * n))
-            {
+            if (s - n > 2 * n)
                 if (Math.Abs(n) % 2 == 0)
                     answer = true;
             // end
@@ -182,7 +170,7 @@
 
             // 3 часа * 10 миль/ч = 30 миль(длина окружности по усл не более 30 миль)
             // по условию четное кол-во гор и не менее 5 ориентиров, включая деревья
-            if (L <= 30 && T + M>= 5 && M % 2 == 0)
+            if (L <= 30) && (T + M>= 5) && (M % 2 == 0)
             {
                 answer = true;
             }
@@ -191,6 +179,7 @@
         }
     }
 }
+
 
 
 
