@@ -26,6 +26,7 @@
             bool answer = false;
             // code here
             //int n = 0;
+            n = Math.Abs(n);
             if (n % 2 == 0)
             {
                 answer = true;
@@ -72,7 +73,7 @@
                 answer = d; 
             }
             else 
-                answer = d; 
+                answer = f; 
             // end
             return answer;
         }
@@ -117,12 +118,8 @@
             //double x = -1.1;
             //double y = -0.6;
             //double r = 1.5;
-            if (Math.Abs(x * x + y * y - r * r) <= Math.Pow(10, -4 ))
-            {
-                anwer = true;
-            }
-            else 
-                answer = false; 
+            double n = Math.Abs(x * x + y * y - r * r);
+            answer = (n <= 0.0001);
             // end
             return answer;
         }
@@ -141,7 +138,6 @@
             bool answer = false;
             // code here
             //int n = 15;
-            //int s = n * n;
             int s = n * n;
             if (s - n > 2 * n)
                 if (Math.Abs(n) % 2 == 0)
@@ -176,6 +172,7 @@
         }
     }
 }
+
 
 
 
