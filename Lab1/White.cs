@@ -186,15 +186,12 @@
             {
                 answer = true;
             }
-            else if (L <= 30 && T + M < 5 && M % 2 == 0)
-            {
-                answer = false;
-            }
             // end
             return answer;
         }
     }
 }
+
 
 
 
