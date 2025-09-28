@@ -53,7 +53,7 @@
             {
                 answer = b;
             }
-            else if (a == b)
+            else 
                 answer = b;
             // end
             return answer;
@@ -107,10 +107,8 @@
                 answer = 1;
             }
             
-            else if (Math.Abs(x) <= 1)
-            {
+            else 
                 answer = x;
-            }
             // end
             return answer;
         }
@@ -134,10 +132,8 @@
             {
                 anwer = true;
             }
-            else if (Math.Abs(x * x + y * y - r * r) > Math.Pow(10, -4 ))
-            { 
+            else 
                 answer = false; 
-            }
             // end
             return answer;
         }
@@ -209,6 +205,7 @@
         }
     }
 }
+
 
 
 
