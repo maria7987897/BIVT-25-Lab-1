@@ -12,10 +12,6 @@
             {
                 answer = true;
             }
-            else if (d < 0)
-            {
-                Console.WriteLine("отрицательное число");
-            }
             // end
             return answer;
         }
@@ -213,6 +209,7 @@
         }
     }
 }
+
 
 
 
