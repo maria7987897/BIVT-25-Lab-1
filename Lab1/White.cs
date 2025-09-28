@@ -7,18 +7,14 @@
             bool answer = false;
             // code here
             //answer = true;
-            double d = 45.00;  // Проверяя число, каждый раз меняем значение переменной d
+            //double d = 45.00;  // Проверяя число, каждый раз меняем значение переменной d
             if (d > 0)
             {
-                Console.WriteLine("положительное число");
+                answer = true;
             }
             else if (d < 0)
             {
                 Console.WriteLine("отрицательное число");
-            }
-            else
-            {
-                Console.WriteLine("число 0");
             }
             // end
             return answer;
@@ -33,14 +29,10 @@
         {
             bool answer = false;
             // code here
-            int n = 0;
+            //int n = 0;
             if (n % 2 == 0)
             {
-                Console.WriteLine("чётное");
-            }
-            else
-            { 
-                Console.WriteLine("нечётное");
+                answer = true;
             }
             // end
             return answer;
@@ -55,21 +47,18 @@
         {
             int answer = 0;
             // code here
-            int a = 5;
-            int b = 5;
+            //int a = 5;
+            //int b = 5;
             if (a > b)
             {
-                Console.WriteLine(a);
+                answer = a;
             }
             else if (a < b)
             {
-                Console.WriteLine(b);
+                answer = b;
             }
             else if (a == b)
-            {
-                Console.WriteLine(a);
-                Console.WriteLine("a = b");
-            }
+                answer = b;
             // end
             return answer;
         }
@@ -84,18 +73,20 @@
         {
             double answer = 0;
             // code here
-            double d = -1.1;
-            double f = -0.6;
+            //double d = -1.1;
+            //double f = -0.6;
             if (Math.Abs(f) > Math.Abs(d))
             {
-                Console.WriteLine(Math.Abs(d)); // возвращаем значение меньшего по модулю числа
+                answer = f; // возвращаем значение меньшего по модулю числа
             }
             else if (Math.Abs(d) > Math.Abs(f))
             { 
-                Console.WriteLine(f); // возвращаем значение меньшего по модулю числа
+                answer = d; // возвращаем значение меньшего по модулю числа
             }
-            else
-                Console.WriteLine(f); // числа по модулю равны => можно вывести любое из них, оно и будет наименьшим
+            else if (Math.Abs(d) == Math.Abs(f))
+            {
+                answer = d;
+            }
             // end
             return answer;
         }
@@ -117,14 +108,12 @@
 
             if (Math.Abs(x) > 1)
             {
-                Console.WriteLine("y = ");
-                Console.WriteLine("1");
+                answer = 1;
             }
             
             else if (Math.Abs(x) <= 1)
             {
-                Console.WriteLine("y = ");
-                Console.WriteLine(x);
+                answer = x;
             }
             // end
             return answer;
@@ -142,16 +131,16 @@
         {
             bool answer = false;
             // code here
-            double x = -1.1;
-            double y = -0.6;
-            double r = 1.5;
+            //double x = -1.1;
+            //double y = -0.6;
+            //double r = 1.5;
             if (Math.Abs(x * x + y * y - r * r) <= Math.Pow(10, -4 ))
             {
-                Console.WriteLine("yes"); 
+                anwer = true;
             }
-            else
+            else if (Math.Abs(x * x + y * y - r * r) > Math.Pow(10, -4 ))
             { 
-                Console.WriteLine("no"); 
+                answer = false; 
             }
             // end
             return answer;
@@ -170,9 +159,8 @@
         {
             bool answer = false;
             // code here
-            int n = 15;
-            int s = n * n;
-            bool answer = false;
+            //int n = 15;
+            //int s = n * n;
             if ((s - n) > (2 * n))
             {
                 if (n % 2 == 0)
@@ -181,7 +169,7 @@
                 }
                 else
                 {
-                    // Здесь ничего не делается = return answer
+                    answer = false;
                 }
             }
             else
@@ -206,25 +194,26 @@
             bool answer = false;
             // code here
             // произвольные текстовые значения: как пример
-            int L = 28; // Длина окружности острова
-            int T = 4; // Количество деревьев
-            int M = 2; // Количество гор
+            //int L = 28; // Длина окружности острова
+            //int T = 4; // Количество деревьев
+            //int M = 2; // Количество гор
 
             // 3 часа * 10 миль/ч = 30 миль(длина окружности по усл не более 30 миль)
             // по условию четное кол-во гор и не менее 5 ориентиров, включая деревья
             if (L <= 30 && T + M>= 5 && M % 2 == 0)
             {
-                Console.WriteLine("Стоит причалить к этому острову. Тут клад");
+                answer = true;
             }
-            else
+            else if (L <= 30 && T + M < 5 && M % 2 == 0)
             {
-                Console.WriteLine("Не стоит причаливать к этому острову. Клад не тут");
+                answer = false;
             }
             // end
             return answer;
         }
     }
 }
+
 
 
 
