@@ -113,6 +113,19 @@
         {
             double answer = 0;
             // code here
+            double x = 2.4;
+
+            if (Math.Abs(x) > 1)
+            {
+                Console.WriteLine("y = ");
+                Console.WriteLine("1");
+            }
+            
+            else if (Math.Abs(x) <= 1)
+            {
+                Console.WriteLine("y = ");
+                Console.WriteLine(x);
+            }
             // end
             return answer;
         }
@@ -212,6 +225,7 @@
         }
     }
 }
+
 
 
 
