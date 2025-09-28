@@ -153,21 +153,11 @@
             // code here
             //int n = 15;
             //int s = n * n;
+            int s = n * n;
             if ((s - n) > (2 * n))
             {
-                if (n % 2 == 0)
-                {
+                if (Math.Abs(n) % 2 == 0)
                     answer = true;
-                }
-                else
-                {
-                    answer = false;
-                }
-            }
-            else
-            {
-                answer = true;
-            }
             // end
             return answer;
         }
@@ -205,6 +195,7 @@
         }
     }
 }
+
 
 
 
